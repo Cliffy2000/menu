@@ -14,7 +14,7 @@ var canvas = document.getElementById( 'canvas' ),
 		ctx = canvas.getContext( '2d' ),
 		// full screen dimensions
 		cw = window.innerWidth,
-		ch = window.innerHeight,
+		ch = window.innerHeight / 1.5,
 		// firework collection
 		fireworks = [],
 		// particle collection
@@ -25,7 +25,7 @@ var canvas = document.getElementById( 'canvas' ),
 		limiterTotal = 5,
 		limiterTick = 0,
 		// this will time the auto launches of fireworks, one launch per 80 loop ticks
-		timerTotal = 20,
+		timerTotal = 5,
 		timerTick = 0,
 		mousedown = false,
 		// mouse x coordinate,

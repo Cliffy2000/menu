@@ -18,7 +18,7 @@ canvas {
   }
 
   .background {
-    background-image: linear-gradient(rgb(212, 212, 212), rgb(252, 90, 90), black);
+    background-image: linear-gradient(rgb(233, 233, 233), rgb(252, 90, 90), black);
     padding-top: 50px;
     height: 100%;
   }
@@ -54,7 +54,7 @@ canvas {
   }
   
   .background {
-    background-image: linear-gradient(rgb(212, 212, 212), rgb(252, 90, 90), black);
+    background-image: linear-gradient(rgb(231, 231, 231), rgb(252, 90, 90), black, black, black);
     padding-top: 50px;
   }
 
@@ -64,7 +64,7 @@ canvas {
     justify-content: center;
     text-align: center;
     font-size: 15px;
-    height: 1200px;
+    height: 400px;
   }
   
   .menu-container {
