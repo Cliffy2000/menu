@@ -3,6 +3,10 @@ html, body {
   height: 100%;
 }
 
+canvas {
+  display: block;
+}
+
 .background {
   background-image: linear-gradient(rgb(252, 90, 90), black);
   padding-top: 50px;
