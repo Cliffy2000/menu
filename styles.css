@@ -1,0 +1,15 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+.background {
+  background-color: rgb(255, 152, 152);
+  height: 100%;
+  padding-top: 50px;
+}
+
+.content {
+  background-color: rgb(235, 235, 235);
+  margin: 0% 16% 0% 16%;
+}
