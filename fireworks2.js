@@ -10,11 +10,11 @@ window.requestAnimFrame = ( function() {
 })();
 
 // now we will setup our basic variables for the demo
-var canvas = document.getElementById( 'canvas-mobile' ),
+var canvas = document.getElementById( 'canvas' ),
 		ctx = canvas.getContext( '2d' ),
 		// full screen dimensions
 		cw = window.innerWidth,
-		ch = window.innerHeight / 3,
+		ch = window.innerHeight,
 		// firework collection
 		fireworks = [],
 		// particle collection
@@ -24,8 +24,8 @@ var canvas = document.getElementById( 'canvas-mobile' ),
 		// when launching fireworks with a click, too many get launched at once without a limiter, one launch per 5 loop ticks
 		limiterTotal = 5,
 		limiterTick = 0,
-		// this will time the auto launches of fireworks, one launch per __ loop ticks
-		timerTotal = 8,
+		// this will time the auto launches of fireworks, one launch per 80 loop ticks
+		timerTotal = 20,
 		timerTick = 0,
 		mousedown = false,
 		// mouse x coordinate,
@@ -123,6 +123,7 @@ Firework.prototype.draw = function() {
 	ctx.lineTo( this.x, this.y );
 	ctx.strokeStyle = 'hsl(' + hue + ', 100%, ' + this.brightness + '%)';
 	ctx.stroke();
+
 }
 
 // create particle
