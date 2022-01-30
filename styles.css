@@ -5,15 +5,18 @@ html, body {
 
 .background {
   background-color: rgb(255, 134, 134);
-  height: 100%;
   padding-top: 50px;
 }
 
 .content {
   background-color: rgb(235, 235, 235);
   margin: 0% 16% 0% 16%;
-  padding: 20px 20px 20px 20px;
+  padding: 50px;
+  justify-content: center;
+  text-align: center;
 }
+
+
 
 @media only screen and (max-device-width: 720px) {
   .show-mobile {
@@ -21,6 +24,17 @@ html, body {
   }
   .hide-mobile {
     display: none;
+  }
+  .menu-container {
+    position: relative;
+    text-align: center;
+  }
+  .menu-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
   }
 }
 
